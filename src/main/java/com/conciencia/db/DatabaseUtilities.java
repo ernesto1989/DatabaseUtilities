@@ -1,6 +1,5 @@
 package com.conciencia.db;
 
-import com.conciencia.db.impl.SqliteUtilities;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -48,9 +47,9 @@ public abstract class DatabaseUtilities <T extends ExpectedResult> {
             stmt.close();
             conn.close();
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
             Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
@@ -79,9 +78,9 @@ public abstract class DatabaseUtilities <T extends ExpectedResult> {
             stmt.close();
             conn.close();
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
             Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
@@ -106,9 +105,9 @@ public abstract class DatabaseUtilities <T extends ExpectedResult> {
             stmt.close();
             conn.close();
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } 
         
         return generatedId;
@@ -128,9 +127,9 @@ public abstract class DatabaseUtilities <T extends ExpectedResult> {
             stmt.close();
             conn.close();
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } 
         
         return count;
@@ -148,9 +147,9 @@ public abstract class DatabaseUtilities <T extends ExpectedResult> {
             conn.close();
             return result.longValue();
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(SqliteUtilities.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DatabaseUtilities.class.getName()).log(Level.SEVERE, null, ex);
         } 
         return result.longValue();
     }
