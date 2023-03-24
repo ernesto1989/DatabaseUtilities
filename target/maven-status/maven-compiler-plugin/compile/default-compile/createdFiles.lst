@@ -1,0 +1,6 @@
+com\conciencia\db\DatabaseUtilities.class
+com\conciencia\db\impl\MSAccessUtilities.class
+com\conciencia\db\ExpectedResult.class
+com\conciencia\db\impl\PostgreUtilities.class
+com\conciencia\db\impl\SqliteUtilities.class
+com\conciencia\db\impl\MysqlUtilities.class
